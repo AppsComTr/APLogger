@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "APLogger"
-  s.version      = "1.0"
+  s.version      = "1.1"
   s.summary      = "Yet another logger framework for Swift/Objective-C"
   s.description  = <<-DESC
   					This is a light-weight logger helper framework for Swift/Objective-C. It also can be custumizable for your taste!
