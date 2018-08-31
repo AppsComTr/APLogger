@@ -2,7 +2,7 @@
 Yet another logger framework for Swift/Objective-C
 
 [![Platform](https://img.shields.io/cocoapods/p/APLogger.svg)](https://github.com/AppsComTr/APLogger)
-[![CocoaPods](https://img.shields.io/cocoapods/v/APLogger.svg)](http://cocoadocs.org/docsets/APLogger)
+[![CocoaPods](https://img.shields.io/cocoapods/v/APLogger.svg)](https://cocoapods.org/pods/APLogger)
 [![License](http://img.shields.io/cocoapods/l/APLogger.svg)](https://raw.githubusercontent.com/AppsComTr/APLogger/master/LICENSE)
 
 
