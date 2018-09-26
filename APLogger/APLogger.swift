@@ -12,19 +12,19 @@ import Foundation
 @objc open class APLogger: NSObject {
     
     /// This variable helps to control log level.
-    @objc open static var isDebug: Bool = false
+    @objc public static var isDebug: Bool = false
     
     /// Variable to set descriptor string for the log level info.
-    @objc open static var infoDescriptorString = "ℹ️"
+    @objc public static var infoDescriptorString = "ℹ️"
     /// Variable to set descriptor string for the log level warning.
-    @objc open static var warningDescriptorString = "⚠️"
+    @objc public static var warningDescriptorString = "⚠️"
     /// Variable to set descriptor string for the log level error.
-    @objc open static var errorDescriptorString = "⛔"
+    @objc public static var errorDescriptorString = "⛔"
     /// Variable to set descriptor string for the log level fatal.
-    @objc open static var fatalDescriptorString = "🆘"
+    @objc public static var fatalDescriptorString = "🆘"
     
     /// Use this variable to set minimum log level that you want to see when isDebug variable is false.
-    @objc open static var releaseMinimumLogLevel: LogLevel = .error
+    @objc public static var releaseMinimumLogLevel: LogLevel = .error
     
     /// Default log format string. This may be changed by using changeLogFormat function.
     private static var originalLogFormatString = "%@ %@ - %@"
@@ -38,7 +38,7 @@ import Foundation
      - description: Description parameter for the log.
      - logLevel: Log level for the log.
      */
-    @objc open static func log(_ title: String, _ description: String?, _ logLevel: LogLevel) {
+    @objc public static func log(_ title: String, _ description: String?, _ logLevel: LogLevel) {
         
         if (isDebug) {
             switch logLevel {
@@ -75,7 +75,7 @@ import Foundation
      - title: Title parameter for the log.
      - description: Description parameter for the log.
      */
-    @objc open static func logInfo(_ title: String, _ description: String?) {
+    @objc public static func logInfo(_ title: String, _ description: String?) {
         print(String(format: logFormatString, arguments: [infoDescriptorString, title, description ?? ""]))
     }
     
@@ -85,7 +85,7 @@ import Foundation
      - title: Title parameter for the log.
      - description: Description parameter for the log.
      */
-    @objc open static func logWarning(_ title: String, _ description: String?) {
+    @objc public static func logWarning(_ title: String, _ description: String?) {
         print(String(format: logFormatString, arguments: [warningDescriptorString, title, description ?? ""]))
     }
     
@@ -95,7 +95,7 @@ import Foundation
      - title: Title parameter for the log.
      - description: Description parameter for the log.
      */
-    @objc open static func logError(_ title: String, _ description: String?) {
+    @objc public static func logError(_ title: String, _ description: String?) {
         print(String(format: logFormatString, arguments: [errorDescriptorString, title, description ?? ""]))
     }
     
@@ -105,7 +105,7 @@ import Foundation
      - title: Title parameter for the log.
      - description: Description parameter for the log.
      */
-    @objc open static func logFatal(_ title: String, _ description: String?) {
+    @objc public static func logFatal(_ title: String, _ description: String?) {
         print(String(format: logFormatString, arguments: [fatalDescriptorString, title, description ?? ""]))
     }
     
@@ -114,7 +114,7 @@ import Foundation
      - parameters:
      - format: Format string to be used for logging. You may use any format which you desire.
      */
-    @objc open static func changeLogFormat(_ format: String!) {
+    @objc public static func changeLogFormat(_ format: String!) {
         if (format.isEmpty) {
             return
         }
