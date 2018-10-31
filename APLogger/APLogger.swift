@@ -10,7 +10,7 @@ import Foundation
 
 /// Static class to use APLogger.
 @objc open class APLogger: NSObject {
-    
+
     /// This variable helps to control log level.
     @objc public static var isDebug: Bool = false
     
@@ -40,7 +40,7 @@ import Foundation
      */
     @objc public static func log(_ title: String, _ description: String?, _ logLevel: LogLevel) {
         
-        if (isDebug) {
+        if isDebug {
             switch logLevel {
             case .info:
                 self.logInfo(title, description)
@@ -53,7 +53,7 @@ import Foundation
             }
             
         } else {
-            if (logLevel.rawValue >= releaseMinimumLogLevel.rawValue) {
+            if logLevel.rawValue >= releaseMinimumLogLevel.rawValue {
                 switch logLevel {
                 case .info:
                     self.logInfo(title, description)
@@ -115,7 +115,7 @@ import Foundation
      - format: Format string to be used for logging. You may use any format which you desire.
      */
     @objc public static func changeLogFormat(_ format: String!) {
-        if (format.isEmpty) {
+        if format.isEmpty {
             return
         }
         logFormatString = format
