@@ -1,6 +1,7 @@
 # APLogger
 Yet another logger framework for Swift/Objective-C
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/eaf51ed69c314e42ac77ba33d2302613)](https://app.codacy.com/app/mertsimsek/APLogger?utm_source=github.com&utm_medium=referral&utm_content=AppsComTr/APLogger&utm_campaign=Badge_Grade_Settings)
 [![Platform](https://img.shields.io/cocoapods/p/APLogger.svg)](https://github.com/AppsComTr/APLogger)
 [![CocoaPods](https://img.shields.io/cocoapods/v/APLogger.svg)](https://cocoapods.org/pods/APLogger)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
