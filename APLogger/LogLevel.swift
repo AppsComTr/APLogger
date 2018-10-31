@@ -14,11 +14,17 @@ import Foundation
     case info
     /// Warning log level. You may use this level to log some unexpected situations.
     case warning
-    /// Error log level. You may use this level to log some unexpected situations which causes the code does not work correctly.
+    /**
+        Error log level. You may use this level to log some unexpected situations
+        which causes the code does not work correctly.
+     */
     case error
-    /// Fatal log level. You may use this level to log a serious situation. This situation may causes crash. Hope you won't see this log.
+    /**
+        Fatal log level. You may use this level to log a serious situation.
+        This situation may causes crash. Hope you won't see this log.
+     */
     case fatal
-    
+
     public typealias RawValue = Int
     
     public var rawValue: RawValue {

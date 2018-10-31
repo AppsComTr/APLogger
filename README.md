@@ -6,7 +6,6 @@ Yet another logger framework for Swift/Objective-C
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![License](http://img.shields.io/cocoapods/l/APLogger.svg)](https://raw.githubusercontent.com/AppsComTr/APLogger/master/LICENSE)
 
-
 ## Installation
 ### Manual
 You can drag AppLogger.swift and LogLevel.swift files directly to your project and you are all set.
@@ -22,12 +21,12 @@ Simply, you can use below code to start logging with style!
 
 There are 4 log levels to make it clear when you are reading logs.
 
-````
+```swift
 .info
 .warning
 .error
 .fatal
-````
+```
 
 By default, APLogger will print only `.error` and `.fatal` logs. But you can specify the minimum log level by using:
 
@@ -41,12 +40,12 @@ APLogger can be customized by logging format and log level descriptors.
 
 Log level descriptors has default values of: 
 
-````
+```swift
 infoDescriptorString = "ℹ️"
 warningDescriptorString = "⚠️"
 errorDescriptorString = "⛔"
 fatalDescriptorString = "🆘"
-````
+```
 
 APLogger's default logging format is:
 
