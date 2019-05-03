@@ -1,4 +1,0 @@
-language: swift
-xcode_project: APLogger.xcodeproj
-xcode_scheme: Universal
-xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone X
